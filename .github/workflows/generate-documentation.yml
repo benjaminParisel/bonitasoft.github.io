@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build docs
-        run: npm run build
+        run: npm run local:build-static
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
